@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $(".brands-carousel").owlCarousel({
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:6,
+            },
+            992:{
+                items:8,
+            }
+        }
+    });
+});
