@@ -1,4 +1,19 @@
 $(document).ready(function(){
+    $(".products-carousel").owlCarousel({
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:6,
+            },
+            992:{
+                items:4,
+            }
+        }
+    });
+
     $(".brands-carousel").owlCarousel({
         responsiveClass:true,
         responsive:{
