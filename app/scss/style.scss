@@ -145,6 +145,44 @@ ul {
   }
 }
 
+.tab {
+  overflow: hidden;
+
+  button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+.tab button.active {
+  background-color: #fd926d;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px 0;
+  background-color: #fd926d;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .favorite-brands {
   position: relative;
   border: 1px solid #d8d8d8;
