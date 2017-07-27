@@ -1,17 +1,8 @@
 {
   "name": "smile",
   "version": "1.0.0",
-  "description": "smile test",
-  "main": "index.js",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0"
-  },
+  "description": "",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/tirr0re/smile.git"
   },
-  "author": "tirr0re",
+  "author": "AD",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tirr0re/smile/issues"
   },
-  "homepage": "https://github.com/tirr0re/smile#readme"
+  "homepage": "https://github.com/tirr0re/smile#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
 }

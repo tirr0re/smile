@@ -1,5 +1,5 @@
 body {
-  font: 14px/16px 'ArialMT', Arial, sans-serif;
+  font: 14px/16px Arial, sans-serif;
   background-color: #fff;
   color: #414141;
 }
@@ -22,7 +22,6 @@ ul {
   text-transform: uppercase;
   color: #fff;
   transition: color .3s ease-out;
-
   &:hover {
     color: #414141;
     text-decoration: none;
@@ -60,17 +59,15 @@ ul {
   margin-right: 5px;
   margin-bottom: 7px;
   transition: all .3s ease-out;
-
   &:hover {
     margin-bottom: 0;
-    padding: 0px;
-
+    padding: 0;
     .product-item-wrapper {
-      box-shadow: 0px 4px 10px rgba(0,0,0,.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,.2);
     }
 
     .product-item-btn-shop {
-      transform: scale(1,1);
+      opacity: .7;
     }
   }
 }
@@ -83,7 +80,6 @@ ul {
   margin-bottom:10px;
   position: relative;
   transition: all .3s ease-out;
-
   & > * {
     margin-bottom: 10px;
   }
@@ -109,7 +105,6 @@ ul {
 .product-item-btn-add {
   font-size: 12px;
   padding: 8px 10px 8px 7px;
-
   i {
     padding-left: 9px;
   }
@@ -135,19 +130,16 @@ ul {
   position: absolute;
   top:100px;
   left: 50%;
-  transform: scale(0,0);
-  margin-left: -77px;
-  transition: transform .3s ease-out, opacity .5s ease-out;
-  opacity: .7;
-
+  transform: translateX(-50%);
+  transition: opacity .3s ease-out;
+  opacity: 0;
   &:hover {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
 .tab {
   overflow: hidden;
-
   button {
     background-color: inherit;
     float: left;
@@ -158,16 +150,15 @@ ul {
     transition: 0.3s;
     font-size: 17px;
     text-transform: uppercase;
-
     &:hover {
       background-color: #ddd;
     }
-  }
-}
 
-.tab button.active {
-  background-color: #fd926d;
-  color: #fff;
+    &.active {
+      background-color: #fd926d;
+      color: #fff;
+    }
+  }
 }
 
 .tabcontent {
@@ -189,16 +180,14 @@ ul {
   border-left: none;
   border-right: none;
   padding:20px 0px;
-
   h2 {
     font:700 15px Arial, sans-serif;
     position: relative;
     margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
-
     span {
-      padding: 0px 20px;
+      padding: 0 20px;
       background-color: #fff;
       position: absolute;
       top: -30px;
@@ -224,7 +213,6 @@ ul {
 .about {
   padding: 30px 0 16px;
   text-align: center;
-
   h2 {
     font-size: 1.5rem;
     margin-bottom: .6rem;
@@ -240,7 +228,6 @@ ul {
 .accept {
   background-color: #f7f7f7;
   text-align: center;
-
   .span-for {
     line-height: 58px;
   }
@@ -265,7 +252,6 @@ ul {
 .footer-top-left {
   flex-wrap: wrap;
   justify-content: space-between;
-
   .footer-top-menu {
     margin-right:30px;
   }
@@ -280,7 +266,6 @@ ul {
   li {
     margin-bottom: .11rem;
     font-size: 12px;
-
     a {
       color: #544f4d;
       text-decoration: none;
@@ -301,12 +286,10 @@ ul {
   margin-right: 59px;
   padding: 0;
   max-width: 134px;
-
   li {
     display: inline-block;
     margin-right: 8px;
     margin-bottom: 8px;
-
     a {
       display: inline-block;
       width: 34px;
@@ -317,13 +300,8 @@ ul {
       color: #fff;
       position: relative;
       transition: background-color .3s ease-out;
-
-      .fa {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+      line-height: 34px;
+      text-align: center;
     }
   }
 }
@@ -377,13 +355,11 @@ ul {
 .footer-main-menu {
   margin-bottom: 0;
   line-height: 73px;
-
   li {
     display: inline;
     padding-left: 8px;
     padding-right: 8px;
     border-right:1px solid #8d8d8d;
-
     &:first-child {
       padding-left: 0;
     }
@@ -392,9 +368,4 @@ ul {
       border-right: none;
     }
   }
-}
-
-@font-face {
-  font-family: 'ArialMT';
-  src: url(../fonts/ArialMT/ARIALMT.ttf) format('truetype');
 }
