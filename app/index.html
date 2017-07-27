@@ -93,39 +93,53 @@
       
   </section><!-- end content-social -->
 
-  <section class="blocks">
+  <section class="grid-blocks container">
+    <div class="grid-wrapper-outer">
+      <div class="grid-wrapper">
+        <div class="block block-big">
+          <a href="#"><img src="images/block1.jpg" alt="1"></a>
+        </div><!-- end block-big -->
 
+        <div class="block block-medium">
+          <a href="#"><img src="images/block2.jpg" alt="2"></a>
+        </div><!-- end block-medium -->
+
+        <div class=" block block-small">
+          <a href="#"><img src="images/block3.jpg" alt="3"></a>
+        </div><!-- end block-small -->
+
+        <div class="block block-small">
+          <a href="#"><img src="images/block4.jpg" alt="4"></a>
+        </div><!-- end block-small -->
+      </div>
+    </div>
   </section><!-- end blocks -->
 
   <section class="slider-tabs">
     <div class="container tab">
-      <button class="tablinks" onclick="openSlider(event, 'Hot')" id="defaultOpen">What's hot</button>
-      <button class="tablinks" onclick="openSlider(event, 'Designers')">Designers</button>
-      <button class="tablinks" onclick="openSlider(event, 'Featured')">Featured</button>
-      <button class="tablinks" onclick="openSlider(event, 'Latest')">Latest</button>
+      <button class="tablinks" onclick="openSlider(event, 'hot')" id="defaultOpen">What's hot?</button>
+      <button class="tablinks" onclick="openSlider(event, 'designers')">Designers</button>
+      <button class="tablinks" onclick="openSlider(event, 'featured')">Featured</button>
+      <button class="tablinks" onclick="openSlider(event, 'latest')">Latest</button>
+
+      <div class="tabs-controls float-right">
+        <div id="next-slide" class="my-btns">
+          <i class="right-btn"></i>
+        </div>
+        <div id="prev-slide" class="my-btns">
+          <i class="left-btn"></i>
+        </div>
+      </div>
     </div>
 
-    <div id="Hot" class="tabcontent">
+    <div id="hot" class="tabcontent">
       <div class="owl-carousel products-slider">
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
-            <span class="product-item-price">$64.95</span>
-            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
-            <div class="sale"></div>
-          </div><!-- end product-item-wrapper -->
-        </div>
-
-        <div class="product-item product-item-sale">
-          <div class="product-item-wrapper">
-            <div class="product-item-img">
-              <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -135,10 +149,49 @@
 
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
+            <span class="product-item-price">$64.95</span>
+            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
+            <div class="sale"></div>
+          </div><!-- end product-item-wrapper -->
+        </div>
+
+        <div class="product-item">
+          <div class="product-item-wrapper">
+            <a href="#" class="product-item-img">
+              <img src="images/01.jpg" alt="1">
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
+            <span class="product-item-price">$64.95</span>
+            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
+            <div class="sale"></div>
+          </div><!-- end product-item-wrapper -->
+        </div>
+
+        <div class="product-item">
+          <div class="product-item-wrapper">
+            <a  href="#" class="product-item-img">
+              <img src="images/01.jpg" alt="1">
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
+            <span class="product-item-price">$64.95</span>
+            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
+            <div class="sale"></div>
+          </div><!-- end product-item-wrapper -->
+        </div>
+
+        <div class="product-item">
+          <div class="product-item-wrapper">
+            <a  href="#" class="product-item-img">
+              <img src="images/01.jpg" alt="1">
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -148,10 +201,36 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
+            <span class="product-item-price">$64.95</span>
+            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
+            <div class="sale"></div>
+          </div><!-- end product-item-wrapper -->
+        </div>
+
+        <div class="product-item">
+          <div class="product-item-wrapper">
+            <a  href="#" class="product-item-img">
+              <img src="images/01.jpg" alt="1">
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
+            <span class="product-item-price">$64.95</span>
+            <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
+            <div class="sale"></div>
+          </div><!-- end product-item-wrapper -->
+        </div>
+
+        <div class="product-item product-item-sale">
+           <div class="product-item-wrapper">
+            <a href="#" class="product-item-img">
+              <img src="images/01.jpg" alt="1">
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -161,14 +240,14 @@
       </div><!-- end products-carousel -->
     </div>
 
-    <div id="Designers" class="tabcontent">
+    <div id="designers" class="tabcontent">
       <div class="owl-carousel products-slider">
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -178,10 +257,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -191,10 +270,10 @@
 
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -204,10 +283,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -217,14 +296,14 @@
       </div><!-- end products-carousel -->
     </div>
 
-    <div id="Featured" class="tabcontent">
+    <div id="featured" class="tabcontent">
       <div class="owl-carousel products-slider">
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -234,10 +313,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -247,10 +326,10 @@
 
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -260,10 +339,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -273,14 +352,14 @@
       </div><!-- end products-carousel -->
     </div>
 
-    <div id="Latest" class="tabcontent">
+    <div id="latest" class="tabcontent">
       <div class="owl-carousel products-slider">
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -290,10 +369,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -303,10 +382,10 @@
 
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -316,10 +395,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -339,10 +418,10 @@
       <div class="owl-carousel products-carousel">
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -352,10 +431,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -365,10 +444,10 @@
 
         <div class="product-item">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>
@@ -378,10 +457,10 @@
 
         <div class="product-item product-item-sale">
           <div class="product-item-wrapper">
-            <div class="product-item-img">
+            <a href="#" class="product-item-img">
               <img src="images/01.jpg" alt="1">
-            </div>
-            <h3 class="product-item-name">Nadia dress</h3>
+            </a>
+            <h3 class="product-item-name"><a href="#">Nadia dress</a></h3>
             <span class="product-item-price">$64.95</span>
             <a href="#" class="btn-coral product-item-btn-add">add to cart<i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" class="product-item-btn-shop"><img src="images/shop_it.png" alt="Shop It"></a>

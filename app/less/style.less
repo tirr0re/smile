@@ -1,3 +1,6 @@
+@color-coral: #fd926d;
+@footer-text: #8d8d8d;
+
 body {
   font: 14px/16px Arial, sans-serif;
   background-color: #fff;
@@ -16,7 +19,7 @@ ul {
 
 .btn-coral {
   display: inline-block;
-  background-color: #fd926d;
+  background-color: @color-coral;
   border-bottom: 2px solid #dd6b44;
   border-radius: 0;
   text-transform: uppercase;
@@ -28,12 +31,61 @@ ul {
   }
 }
 
+.grid-blocks {
+  padding-bottom:50px;
+}
+
+.grid-wrapper-outer {
+  position: relative;
+  width: 100%;
+  padding-top: 35%;
+}
+
+.grid-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+
+.block {
+  float: left;
+  background-color: #ccc;
+  border: 1px solid #fff;
+  overflow: hidden;
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.block-big {
+  width:50%;
+  height:100%;
+}
+
+.block-medium {
+  width: 50%;
+  height: 50%;
+}
+
+.block-small {
+  width: 25%;
+  height: 50%;
+}
+
 .products {
   padding-bottom: 40px;
 }
 
 .products-img {
   position: relative;
+  margin-top: 10px;
   text-align: center;
   &:before {
     content: '';
@@ -86,6 +138,7 @@ ul {
 }
 
 .product-item-img {
+  display: block;
   img {
     display: block;
     width: 100%;
@@ -95,6 +148,10 @@ ul {
 .product-item-name {
   font-size: 12px;
   text-transform: uppercase;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .product-item-price {
@@ -146,16 +203,16 @@ ul {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 16px 16px 14px 20px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     &:hover {
-      background-color: #ddd;
+      background-color: lighten(@color-coral, 20%);
     }
 
     &.active {
-      background-color: #fd926d;
+      background-color: @color-coral;
       color: #fff;
     }
   }
@@ -164,7 +221,7 @@ ul {
 .tabcontent {
   display: none;
   padding: 20px 0;
-  background-color: #fd926d;
+  background-color: @color-coral;
   animation: fadeEffect 1s;
 }
 
@@ -172,6 +229,76 @@ ul {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.tabs-controls {
+  position: relative;
+  .my-btns {
+    position:relative;
+    display: block;
+    float: right;
+    width: 48px;
+    height: 46px;
+    background-color: #f2f2f2;
+    transition: background-color .3s ease-out;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: @color-coral;
+      i {
+        &:before, &:after {
+          background-color: #fff;
+        }
+      }
+    }
+
+    i {
+      position:relative;
+      display: inline-block;
+      width: 19px;
+      height: 1px;
+      &:before {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 1px;
+        transform: rotateZ(45deg);
+        background-color: #979797;
+        transition: background-color .3s ease-out;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 1px;
+        transform: rotateZ(-45deg);
+        background-color: #979797;
+        transition: background-color .3s ease-out;
+      }
+    }
+
+    .left-btn {
+      &:before {
+        transform-origin:left;
+      }
+
+      &:after {
+        transform-origin:left;
+      }
+    }
+
+    .right-btn {
+      &:before {
+        transform-origin:right;
+      }
+
+      &:after {
+        transform-origin:right;
+      }
+    }
+  }
 }
 
 .favorite-brands {
@@ -340,11 +467,11 @@ ul {
 
 .footer-bot {
   background-color: #000;
-  color: #8d8d8d;
+  color: @footer-text;
   font-size: 11px;
 
   a {
-    color: #8d8d8d;
+    color: @footer-text;
   }
 
   p {
@@ -359,7 +486,7 @@ ul {
     display: inline;
     padding-left: 8px;
     padding-right: 8px;
-    border-right:1px solid #8d8d8d;
+    border-right:1px solid @footer-text;
     &:first-child {
       padding-left: 0;
     }

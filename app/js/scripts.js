@@ -3,6 +3,7 @@ $(document).ready(function(){
         center: true,
         loop: true,
         responsiveClass:true,
+        dots: false,
         responsive:{
             0:{
                 items:1,
@@ -45,6 +46,14 @@ $(document).ready(function(){
             }
         }
     });
+});
+
+document.getElementById('next-slide').addEventListener('click', function(){
+    $('.products-slider').trigger('next.owl.carousel');
+});
+
+document.getElementById('prev-slide').addEventListener('click', function(){
+    $('.products-slider').trigger('prev.owl.carousel');
 });
 
 function openSlider(evt, sliderName) {
