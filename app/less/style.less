@@ -40,6 +40,36 @@ ul {
   }
 }
 
+.stay-updated {
+  input[type=email] {
+    width: 100%;
+    max-width: 130px;
+    padding: 7px 0px 8px 8px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      font-style: italic;
+      color: #9f9f9f;
+    }
+  }
+
+  button {
+    margin-left: -4px;
+    padding: 7px 8px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 .social-find {
   margin-bottom: 0;
   li {
@@ -245,7 +275,7 @@ ul {
     outline: none;
     cursor: pointer;
     padding: 16px 16px 14px 20px;
-    transition: 0.3s;
+    transition: background-color .3s ease-out, color .3s ease-out;
     font-size: 15px;
     text-transform: uppercase;
     &:hover {
