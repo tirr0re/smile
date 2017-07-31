@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   var owl =  $(".products-slider").owlCarousel({
+   var $owl =  $(".products-slider").owlCarousel({
         center: true,
         loop: true,
         responsiveClass:true,
@@ -48,11 +48,11 @@ $(document).ready(function(){
     });
 
     document.getElementById('next-slide').addEventListener('click', function(){
-        owl.trigger('next.owl.carousel');
+        $owl.trigger('next.owl.carousel');
     });
 
     document.getElementById('prev-slide').addEventListener('click', function(){
-        owl.trigger('prev.owl.carousel');
+        $owl.trigger('prev.owl.carousel');
     });
 
 });
