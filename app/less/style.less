@@ -46,6 +46,59 @@ ul {
   }
 }
 
+.account {
+  margin-bottom: 0;
+  & > li {
+    display: inline-block;
+    margin-left: -4px;
+    border-right: 1px solid #444;
+    transition: background-color .3s ease-out;
+    &:first-child {
+      border-left: 1px solid #444;
+    }
+
+    &:hover {
+      background-color: @color-coral;
+    }
+
+    a {
+      display: inline-block;
+      color: #fff;
+      padding: 0 14px;
+      line-height: 30px;
+      text-decoration: none;
+    }
+  }
+
+  .currency {
+    ul {
+      background-color: #000;
+      min-width: 100%;
+      padding: 0;
+      li {
+        font-size: 11px;
+        transition: background-color .3s ease-out;
+
+        &:hover {
+          background-color: @color-coral;
+        }
+      }
+    }
+  }
+
+  .user {
+    i {
+      font-size: 14px;
+      margin-right: 10px;
+      color: #666;
+    }
+  }
+
+  .search {
+    font-size: 14px;
+  }
+}
+
 .slider {
   position: relative;
   margin-bottom: 75px;

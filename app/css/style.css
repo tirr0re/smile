@@ -41,6 +41,50 @@ ul {
 .custom-text span {
   font-size: 12px;
 }
+.account {
+  margin-bottom: 0;
+}
+.account > li {
+  display: inline-block;
+  margin-left: -4px;
+  border-right: 1px solid #444;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.account > li:first-child {
+  border-left: 1px solid #444;
+}
+.account > li:hover {
+  background-color: #fd926d;
+}
+.account > li a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.account .currency ul {
+  background-color: #000;
+  min-width: 100%;
+  padding: 0;
+}
+.account .currency ul li {
+  font-size: 11px;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.account .currency ul li:hover {
+  background-color: #fd926d;
+}
+.account .user i {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #666;
+}
+.account .search {
+  font-size: 14px;
+}
 .slider {
   position: relative;
   margin-bottom: 75px;
