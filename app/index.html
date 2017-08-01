@@ -35,51 +35,74 @@
         </div>
       </div>
     </div><!-- end top-header -->
-    <div class="container">
-      <div class="row">
+    <div class="container main-menu">
+      <div class="row align-items-center">
         <div class="col-2">
           <a href="#" class="logo"><img src="images/logo.png" alt="LookShop"></a>
         </div><!-- end col -->
-        <div class="col-7">
-          <nav class="navbar float-right">
-            <ul class="nav navbar-default">
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">new <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">new 1</a></li>
-                  <li><a href="#">new 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">designer <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">designer 1</a></li>
-                  <li><a href="#">designer 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">women <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">women 1</a></li>
-                  <li><a href="#">women 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">men <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">men 1</a></li>
-                  <li><a href="#">men 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">clearence <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">clearence 1</a></li>
-                  <li><a href="#">clearence 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div><!-- end col -->
-        <div class="col-3">
-          <div class="cart">
 
+        <div class="col-md-3 push-md-7">
+          <div class="user-cart">
+            <div class="dropdown cart-dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Your cart
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              </div>
+            </div><!-- end cart-dropdown -->
+            <div class="items">
+              <span class="items-in">0</span> Items | &#036; <span class="cost">0</span>
+            </div>
           </div>
+        </div><!-- end col -->
+
+        <div class="col-md-7 pull-md-3">
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded float-md-right">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">new <span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="dropdown-item" href="#">New 1</a>
+                    <a class="dropdown-item" href="#">New 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">designers <span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                    <a class="dropdown-item" href="#">Designers 1</a>
+                    <a class="dropdown-item" href="#">Designers 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">women <span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                    <a class="dropdown-item" href="#">Women 1</a>
+                    <a class="dropdown-item" href="#">Women 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">men <span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                    <a class="dropdown-item" href="#">Men 1</a>
+                    <a class="dropdown-item" href="#">Men 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">clearence <span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                    <a class="dropdown-item" href="#">Clearence 1</a>
+                    <a class="dropdown-item" href="#">Clearence 2</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div><!-- end col -->
       </div>
     </div>
