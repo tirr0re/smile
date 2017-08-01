@@ -32,6 +32,125 @@ ul {
   }
 }
 
+.slider {
+  position: relative;
+  margin-bottom: 75px;
+  .slide {
+    position: relative;
+    .slide-text-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .container {
+        position: relative;
+        height: 100%;
+      }
+
+      .slide-text-left, .slide-text-right {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+      }
+
+      .slide-text-left {
+        left: 0;
+      }
+
+      .slide-text-right {
+        right: 0;
+      }
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+      }
+
+      .btn-coral {
+        margin-top: 20px;
+        font-size: 16px;
+        padding: 22px 24px 20px;
+        i {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #cbcbca;
+    background-color: #fefefd;
+    line-height: 116px;
+    transition: color .3s ease-out, background-color .3s ease-out;
+    &:hover {
+      color: #fff;
+      background-color: @color-coral;
+    }
+  }
+
+  .owl-prev {
+    left: 0;
+    padding-left: 7px;
+    padding-right: 11px;
+  }
+
+  .owl-next {
+    right: 0;
+    padding-left: 11px;
+    padding-right: 7px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -46px;
+    transform: translateX(-50%);
+  }
+
+  .owl-dot {
+    display: inline-block;
+    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #867a76;
+    transition: background-color .3s ease-out;
+    &:hover {
+      background-color: lighten(#867a76, 10%);
+    }
+    &.active {
+      background-color: @color-coral;
+    }
+  }
+
+  .owl-item {
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 0;
+      height: 7px;
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(134, 122, 118, .5);
+      transition: max-width 5s linear;
+      z-index: 999;
+    }
+
+    &.active:before {
+      max-width: 100%;
+    }
+  }
+}
+
 .content-social {
   background-color: @light-grey;
   .span-for {

@@ -31,6 +31,122 @@ ul {
   color: #414141;
   text-decoration: none;
 }
+.slider {
+  position: relative;
+  margin-bottom: 75px;
+}
+.slider .slide {
+  position: relative;
+}
+.slider .slide .slide-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.slider .slide .slide-text-wrapper .container {
+  position: relative;
+  height: 100%;
+}
+.slider .slide .slide-text-wrapper .slide-text-left,
+.slider .slide .slide-text-wrapper .slide-text-right {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.slider .slide .slide-text-wrapper .slide-text-left {
+  left: 0;
+}
+.slider .slide .slide-text-wrapper .slide-text-right {
+  right: 0;
+}
+.slider .slide .slide-text-wrapper img {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.slider .slide .slide-text-wrapper .btn-coral {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 22px 24px 20px;
+}
+.slider .slide .slide-text-wrapper .btn-coral i {
+  margin-left: 16px;
+}
+.slider .owl-prev,
+.slider .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: #cbcbca;
+  background-color: #fefefd;
+  line-height: 116px;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+.slider .owl-prev:hover,
+.slider .owl-next:hover {
+  color: #fff;
+  background-color: #fd926d;
+}
+.slider .owl-prev {
+  left: 0;
+  padding-left: 7px;
+  padding-right: 11px;
+}
+.slider .owl-next {
+  right: 0;
+  padding-left: 11px;
+  padding-right: 7px;
+}
+.slider .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -46px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.slider .owl-dot {
+  display: inline-block;
+  margin-right: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #867a76;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.slider .owl-dot:hover {
+  background-color: #9e9491;
+}
+.slider .owl-dot.active {
+  background-color: #fd926d;
+}
+.slider .owl-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 0;
+  height: 7px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(134, 122, 118, 0.5);
+  -webkit-transition: max-width 5s linear;
+  transition: max-width 5s linear;
+  z-index: 999;
+}
+.slider .owl-item.active:before {
+  max-width: 100%;
+}
 .content-social {
   background-color: #ededed;
 }
