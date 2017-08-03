@@ -14,13 +14,16 @@ $(document).ready(function(){
         dots: false,
         responsive:{
             0:{
-                items:1,
+                items: 1,
             },
             768:{
-                items:6,
+                items: 3,
             },
             992:{
-                items:6,
+                items: 5,
+            },
+            1200: {
+                items: 6
             }
         }
     });
@@ -29,13 +32,13 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
+                items: 1,
             },
             768:{
-                items:6,
+                items: 3,
             },
             992:{
-                items:4,
+                items: 4,
             }
         }
     });
@@ -44,13 +47,14 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
+                items: 1,
             },
             768:{
-                items:6,
+                items: 6,
+                margin: 10
             },
             992:{
-                items:8,
+                items: 8,
             }
         }
     });
