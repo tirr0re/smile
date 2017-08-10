@@ -1,6 +1,4 @@
-@color-coral: #fd926d;
-@footer-text: #8d8d8d;
-@light-grey: #ededed;
+@import "variables";
 
 body {
   font: 14px/16px Arial, sans-serif;
@@ -25,8 +23,10 @@ ul {
   border-radius: 0;
   text-transform: uppercase;
   color: #fff;
-  transition: color .3s ease-out;
-  &:hover {
+  transition: color @transition-time;
+  &:hover,
+  &:focus,
+  &:active {
     color: #414141;
     text-decoration: none;
   }
@@ -52,12 +52,14 @@ ul {
     display: inline-block;
     margin-left: -4px;
     border-right: 1px solid #444;
-    transition: background-color .3s ease-out;
+    transition: background-color @transition-time;
     &:first-child {
       border-left: 1px solid #444;
     }
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       background-color: @color-coral;
     }
 
@@ -77,9 +79,11 @@ ul {
       padding: 0;
       li {
         font-size: 11px;
-        transition: background-color .3s ease-out;
+        transition: background-color @transition-time;
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
           background-color: @color-coral;
         }
       }
@@ -107,6 +111,7 @@ ul {
 nav {
   font-size: 16px;
 }
+
 .nav-item {
   margin-left: 33px;
 }
@@ -115,8 +120,10 @@ nav {
   color: #000;
   padding-right: 0;
   padding-left: 0;
-  transition: color .3s ease-out;
-  &:hover {
+  transition: color @transition-time;
+  &:hover,
+  &:focus,
+  &:active {
     color: lighten(#000, 40%);
   }
 }
@@ -124,6 +131,11 @@ nav {
 .custom-toggler {
   padding: 0;
   border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -231,8 +243,10 @@ nav {
     color: #cbcbca;
     background-color: #fefefd;
     line-height: 116px;
-    transition: color .3s ease-out, background-color .3s ease-out;
-    &:hover {
+    transition: color @transition-time, background-color @transition-time;
+    &:hover,
+    &:focus,
+    &:active {
       color: #fff;
       background-color: @color-coral;
     }
@@ -264,8 +278,10 @@ nav {
     height: 10px;
     border-radius: 50%;
     background-color: #867a76;
-    transition: background-color .3s ease-out;
-    &:hover {
+    transition: background-color @transition-time;
+    &:hover,
+    &:focus,
+    &:active {
       background-color: lighten(#867a76, 10%);
     }
     &.active {
@@ -345,11 +361,13 @@ nav {
       display: block;
       width: 54px;
       color: #6b6b6b;
-      font-size:22px;
+      font-size: 22px;
       line-height: 54px;
-      text-align:center;
-      transition:background-color .3s ease-out, color .3s ease-out;
-      &:hover {
+      text-align: center;
+      transition: background-color @transition-time, color @transition-time;
+      &:hover,
+      &:focus,
+      &:active {
         color: #fff;
       }
     }
@@ -371,7 +389,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -379,7 +397,9 @@ nav {
   float: left;
   border: 1px solid #fff;
   overflow: hidden;
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     img {
       transform: scale(1.1);
     }
@@ -392,7 +412,7 @@ nav {
   img {
     display: block;
     width: 100%;
-    transition:transform .3s ease-out;
+    transition: transform @transition-time;
   }
 }
 
@@ -442,12 +462,14 @@ nav {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 7px;
-  transition: all .3s ease-out;
-  &:hover {
+  transition: all @transition-time;
+  &:hover,
+  &:focus,
+  &:active {
     margin-bottom: 0;
     padding: 0;
     .product-item-wrapper {
-      box-shadow: 0 4px 10px rgba(0,0,0,.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
     }
 
     .product-item-btn-shop {
@@ -461,9 +483,9 @@ nav {
   width: 100%;
   background-color: #f7f7f7;
   text-align: center;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   position: relative;
-  transition: all .3s ease-out;
+  transition: all @transition-time;
   & > * {
     margin-bottom: 10px;
   }
@@ -517,12 +539,14 @@ nav {
   display: block;
   width: 134px;
   position: absolute;
-  top:100px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  transition: opacity .3s ease-out;
+  transition: opacity @transition-time;
   opacity: 0;
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     opacity: 1 !important;
   }
 }
@@ -536,10 +560,12 @@ nav {
     outline: none;
     cursor: pointer;
     padding: 16px 16px 14px 20px;
-    transition: background-color .3s ease-out, color .3s ease-out;
+    transition: background-color @transition-time, color @transition-time;
     font-size: 15px;
     text-transform: uppercase;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       background-color: lighten(@color-coral, 20%);
     }
 
@@ -559,24 +585,30 @@ nav {
 
 /* Fade in tabs */
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .tabs-controls {
   position: relative;
   .my-btns {
-    position:relative;
+    position: relative;
     display: block;
     float: right;
     width: 48px;
     height: 46px;
     background-color: #f2f2f2;
-    transition: background-color .3s ease-out;
+    transition: background-color @transition-time;
     line-height: 37px;
     text-align: center;
     cursor: pointer;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       background-color: @color-coral;
       i {
         &:before, &:after {
@@ -586,7 +618,7 @@ nav {
     }
 
     i {
-      position:relative;
+      position: relative;
       display: inline-block;
       width: 19px;
       height: 1px;
@@ -597,7 +629,7 @@ nav {
         height: 1px;
         transform: rotateZ(45deg);
         background-color: #979797;
-        transition: background-color .3s ease-out;
+        transition: background-color @transition-time;
       }
 
       &:after {
@@ -607,27 +639,27 @@ nav {
         height: 1px;
         transform: rotateZ(-45deg);
         background-color: #979797;
-        transition: background-color .3s ease-out;
+        transition: background-color @transition-time;
       }
     }
 
     .left-btn {
       &:before {
-        transform-origin:left;
+        transform-origin: left;
       }
 
       &:after {
-        transform-origin:left;
+        transform-origin: left;
       }
     }
 
     .right-btn {
       &:before {
-        transform-origin:right;
+        transform-origin: right;
       }
 
       &:after {
-        transform-origin:right;
+        transform-origin: right;
       }
     }
   }
@@ -638,9 +670,9 @@ nav {
   border: 1px solid #d8d8d8;
   border-left: none;
   border-right: none;
-  padding:20px 0px;
+  padding: 20px 0px;
   h2 {
-    font:700 15px Arial, sans-serif;
+    font: 700 15px Arial, sans-serif;
     position: relative;
     margin-bottom: 0;
     text-align: center;
@@ -678,9 +710,9 @@ nav {
   }
 
   p {
-    font-size:14px;
+    font-size: 14px;
     color: #999;
-    line-height:18px;
+    line-height: 18px;
   }
 }
 
@@ -771,12 +803,12 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   .footer-top-menu {
-    margin-right:30px;
+    margin-right: 30px;
   }
 }
 
 .footer-top-menu-name {
-  font:700 16px Arial, sans-serif;
+  font: 700 16px Arial, sans-serif;
   margin-bottom: .7rem;
 }
 
@@ -787,8 +819,10 @@ nav {
     a {
       color: #544f4d;
       text-decoration: none;
-      transition:color .3s ease-out;
-      &:hover {
+      transition: color @transition-time;
+      &:hover,
+      &:focus,
+      &:active {
         color: #000;
       }
     }
@@ -811,13 +845,13 @@ nav {
     a {
       display: inline-block;
       width: 34px;
-      height:34px;
+      height: 34px;
       border-radius: 50%;
       background-color: #4c4c4b;
       font-size: 1.2rem;
       color: #fff;
       position: relative;
-      transition: background-color .3s ease-out;
+      transition: background-color @transition-time;
       line-height: 34px;
       text-align: center;
     }
@@ -869,7 +903,7 @@ nav {
     display: inline;
     padding-left: 8px;
     padding-right: 8px;
-    border-right:1px solid @footer-text;
+    border-right: 1px solid @footer-text;
     &:first-child {
       padding-left: 0;
     }
@@ -880,29 +914,4 @@ nav {
   }
 }
 
-@media (max-width: 991px) {
-  .navbar {
-    margin-top: 20px;
-    background-color: @color-coral;
-  }
-  .slider .slide {
-    .slide-text-wrapper {
-      img {
-        max-width: 220px;
-      }
-
-      .btn-coral {
-        font-size: 12px;
-        padding: 15px 18px 13px;
-      }
-    }
-
-
-  }
-
-  .footer-top-left {
-    .footer-top-menu:last-child {
-      margin-right: 70px;
-    }
-  }
-}
+@import "respons";

@@ -27,7 +27,9 @@ ul {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-.btn-coral:hover {
+.btn-coral:hover,
+.btn-coral:focus,
+.btn-coral:active {
   color: #414141;
   text-decoration: none;
 }
@@ -54,7 +56,9 @@ ul {
 .account > li:first-child {
   border-left: 1px solid #444;
 }
-.account > li:hover {
+.account > li:hover,
+.account > li:focus,
+.account > li:active {
   background-color: #fd926d;
 }
 .account > li a {
@@ -74,7 +78,9 @@ ul {
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
-.account .currency ul li:hover {
+.account .currency ul li:hover,
+.account .currency ul li:focus,
+.account .currency ul li:active {
   background-color: #fd926d;
 }
 .account .user i {
@@ -102,12 +108,18 @@ nav {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:active {
   color: #666666;
 }
 .custom-toggler {
   padding: 0;
   border: none;
+  cursor: pointer;
+}
+.custom-toggler:focus {
+  outline: none;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -215,7 +227,11 @@ nav {
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 .slider .owl-prev:hover,
-.slider .owl-next:hover {
+.slider .owl-next:hover,
+.slider .owl-prev:focus,
+.slider .owl-next:focus,
+.slider .owl-prev:active,
+.slider .owl-next:active {
   color: #fff;
   background-color: #fd926d;
 }
@@ -247,7 +263,9 @@ nav {
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
-.slider .owl-dot:hover {
+.slider .owl-dot:hover,
+.slider .owl-dot:focus,
+.slider .owl-dot:active {
   background-color: #9e9491;
 }
 .slider .owl-dot.active {
@@ -337,7 +355,9 @@ nav {
   -webkit-transition: background-color 0.3s ease-out, color 0.3s ease-out;
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
-.social-find li a:hover {
+.social-find li a:hover,
+.social-find li a:focus,
+.social-find li a:active {
   color: #fff;
 }
 .grid-blocks {
@@ -361,7 +381,9 @@ nav {
   border: 1px solid #fff;
   overflow: hidden;
 }
-.block:hover img {
+.block:hover img,
+.block:focus img,
+.block:active img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -420,15 +442,21 @@ nav {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.product-item:hover {
+.product-item:hover,
+.product-item:focus,
+.product-item:active {
   margin-bottom: 0;
   padding: 0;
 }
-.product-item:hover .product-item-wrapper {
+.product-item:hover .product-item-wrapper,
+.product-item:focus .product-item-wrapper,
+.product-item:active .product-item-wrapper {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.product-item:hover .product-item-btn-shop {
+.product-item:hover .product-item-btn-shop,
+.product-item:focus .product-item-btn-shop,
+.product-item:active .product-item-btn-shop {
   opacity: .7;
 }
 .product-item-wrapper {
@@ -495,7 +523,9 @@ nav {
   transition: opacity 0.3s ease-out;
   opacity: 0;
 }
-.product-item-btn-shop:hover {
+.product-item-btn-shop:hover,
+.product-item-btn-shop:focus,
+.product-item-btn-shop:active {
   opacity: 1 !important;
 }
 .tab {
@@ -513,7 +543,9 @@ nav {
   font-size: 15px;
   text-transform: uppercase;
 }
-.tab button:hover {
+.tab button:hover,
+.tab button:focus,
+.tab button:active {
   background-color: #feddd2;
 }
 .tab button.active {
@@ -560,11 +592,17 @@ nav {
   text-align: center;
   cursor: pointer;
 }
-.tabs-controls .my-btns:hover {
+.tabs-controls .my-btns:hover,
+.tabs-controls .my-btns:focus,
+.tabs-controls .my-btns:active {
   background-color: #fd926d;
 }
 .tabs-controls .my-btns:hover i:before,
-.tabs-controls .my-btns:hover i:after {
+.tabs-controls .my-btns:focus i:before,
+.tabs-controls .my-btns:active i:before,
+.tabs-controls .my-btns:hover i:after,
+.tabs-controls .my-btns:focus i:after,
+.tabs-controls .my-btns:active i:after {
   background-color: #fff;
 }
 .tabs-controls .my-btns i {
@@ -766,7 +804,9 @@ nav {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-.footer-top-menu-list li a:hover {
+.footer-top-menu-list li a:hover,
+.footer-top-menu-list li a:focus,
+.footer-top-menu-list li a:active {
   color: #000;
 }
 .footer-top-right {
@@ -846,6 +886,9 @@ nav {
   border-right: none;
 }
 @media (max-width: 991px) {
+  .container {
+    width: 100% !important;
+  }
   .navbar {
     margin-top: 20px;
     background-color: #fd926d;
@@ -856,6 +899,10 @@ nav {
   .slider .slide .slide-text-wrapper .btn-coral {
     font-size: 12px;
     padding: 15px 18px 13px;
+  }
+  .products-img {
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .footer-top-left .footer-top-menu:last-child {
     margin-right: 70px;
