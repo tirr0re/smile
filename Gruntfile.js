@@ -10,7 +10,13 @@ module.exports = function (grunt) {
                 options: {
                     plugins: [
                         new (require('less-plugin-autoprefix'))({browsers: ["last 10 versions"]})
-                    ]
+                    ],
+                    compress: true,
+                    cleancss: true,
+                    sourceMap: true,
+                    sourceMapFilename: 'app/css/style.css.map',
+                    sourceMapURL: 'style.css.map',
+                    sourceMapRootpath: '/'
                 },
                 files: {
                     'app/css/style.css': 'app/less/style.less'

@@ -16,6 +16,10 @@ $(document).ready(function(){
             0:{
                 items: 1
             },
+            425:{
+                items: 2,
+                center: false
+            },
             768:{
                 items: 3
             },
@@ -34,6 +38,9 @@ $(document).ready(function(){
             0:{
                 items: 1
             },
+            425:{
+                items: 2
+            },
             768:{
                 items: 3
             },
@@ -47,7 +54,7 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive:{
             0:{
-                items: 1
+                items: 3
             },
             768:{
                 items: 6,
@@ -67,8 +74,17 @@ $(document).ready(function(){
         $owl.trigger('prev.owl.carousel');
     });
 
-});
 
+    $('#select-tab').on('change', function (e) {
+        $('.tablinks').eq($(this).val()).trigger('click');
+    });
+
+
+    $('.footer-main-menu-wrapper button').on('click', function () {
+        $('.footer-main-menu').toggleClass('open');
+    });
+
+});
 
 function openSlider(evt, sliderName) {
     var i, tabcontent, tablinks;
@@ -82,7 +98,7 @@ function openSlider(evt, sliderName) {
     }
     document.getElementById(sliderName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+};
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
