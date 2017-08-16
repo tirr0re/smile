@@ -671,42 +671,34 @@ nav {
       display: inline-block;
       width: 19px;
       height: 1px;
-      &:before {
-        content: '';
-        display: block;
-        width: 22px;
-        height: 1px;
-        transform: rotateZ(45deg);
-        background-color: #979797;
-        transition: background-color @transition-time;
-      }
-
+      &:before,
       &:after {
         content: '';
         display: block;
         width: 22px;
         height: 1px;
-        transform: rotateZ(-45deg);
         background-color: #979797;
         transition: background-color @transition-time;
+      }
+
+      &:before {
+        transform: rotateZ(45deg);
+      }
+
+      &:after {
+        transform: rotateZ(-45deg);
       }
     }
 
     .left-btn {
-      &:before {
-        transform-origin: left;
-      }
-
+      &:before,
       &:after {
         transform-origin: left;
       }
     }
 
     .right-btn {
-      &:before {
-        transform-origin: right;
-      }
-
+      &:before,
       &:after {
         transform-origin: right;
       }

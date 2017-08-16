@@ -75,7 +75,7 @@ $(document).ready(function () {
     });
 
     // Tabs
-    $('.tablinks').on('click', function (event) {
+    $('.tablinks').on('click', function () {
         $('.tablinks').removeClass('active');
         $(this).addClass('active');
         $('.tabcontent').hide();
@@ -83,7 +83,7 @@ $(document).ready(function () {
     });
 
     // change tab with select list option
-    $('#select-tab').on('change', function (event) {
+    $('#select-tab').on('change', function () {
         $('.tablinks').eq($(this).val()).trigger('click');
     });
 
