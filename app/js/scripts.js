@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $(".slider").owlCarousel({
         autoplay: true,
         loop: true,
@@ -7,23 +7,23 @@ $(document).ready(function(){
         navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
     });
 
-   var $owl =  $(".products-slider").owlCarousel({
+    var $owl = $(".products-slider").owlCarousel({
         center: true,
         loop: true,
-        responsiveClass:true,
+        responsiveClass: true,
         dots: false,
-        responsive:{
-            0:{
+        responsive: {
+            0: {
                 items: 1
             },
-            425:{
+            425: {
                 items: 2,
                 center: false
             },
-            768:{
+            768: {
                 items: 3
             },
-            992:{
+            992: {
                 items: 5
             },
             1200: {
@@ -33,72 +33,66 @@ $(document).ready(function(){
     });
 
     $(".products-carousel").owlCarousel({
-        responsiveClass:true,
-        responsive:{
-            0:{
+        responsiveClass: true,
+        responsive: {
+            0: {
                 items: 1
             },
-            425:{
+            425: {
                 items: 2
             },
-            768:{
+            768: {
                 items: 3
             },
-            992:{
+            992: {
                 items: 4
             }
         }
     });
 
     $(".brands-carousel").owlCarousel({
-        responsiveClass:true,
-        responsive:{
-            0:{
+        responsiveClass: true,
+        responsive: {
+            0: {
                 items: 3
             },
-            768:{
+            768: {
                 items: 6,
                 margin: 10
             },
-            992:{
+            992: {
                 items: 8
             }
         }
     });
 
-    document.getElementById('next-slide').addEventListener('click', function(){
+    document.getElementById('next-slide').addEventListener('click', function () {
         $owl.trigger('next.owl.carousel');
     });
 
-    document.getElementById('prev-slide').addEventListener('click', function(){
+    document.getElementById('prev-slide').addEventListener('click', function () {
         $owl.trigger('prev.owl.carousel');
     });
 
+    // Tabs
+    $('.tablinks').on('click', function (event) {
+        $('.tablinks').removeClass('active');
+        $(this).addClass('active');
+        $('.tabcontent').hide();
+        $('.tabcontent').eq($(this).attr('data-val')).show();
+    });
 
-    $('#select-tab').on('change', function (e) {
+    // change tab with select list option
+    $('#select-tab').on('change', function (event) {
         $('.tablinks').eq($(this).val()).trigger('click');
     });
 
-
+    // open/close mobile bottom menu
     $('.footer-main-menu-wrapper button').on('click', function () {
         $('.footer-main-menu').toggleClass('open');
     });
 
+    // open default tab
+    $('#defaultOpen').click();
+
 });
-
-function openSlider(evt, sliderName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(sliderName).style.display = "block";
-    evt.currentTarget.className += " active";
-};
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();

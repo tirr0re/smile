@@ -235,10 +235,10 @@
 
 <section class="slider-tabs">
   <div class="container tab hidden-sm-down">
-    <button class="tablinks" onclick="openSlider(event, 'hot')" id="defaultOpen">What's hot?</button>
-    <button class="tablinks" onclick="openSlider(event, 'designers')">Designers</button>
-    <button class="tablinks" onclick="openSlider(event, 'featured')">Featured</button>
-    <button class="tablinks" onclick="openSlider(event, 'latest')">Latest</button>
+    <button class="tablinks" data-val="0" id="defaultOpen">What's hot?</button>
+    <button class="tablinks" data-val="1">Designers</button>
+    <button class="tablinks" data-val="2">Featured</button>
+    <button class="tablinks" data-val="3">Latest</button>
 
     <div class="tabs-controls float-right">
       <div id="next-slide" class="my-btns">
@@ -259,7 +259,7 @@
     </select>
   </div>
 
-  <div id="hot" class="tabcontent">
+  <div class="tabcontent">
     <div class="owl-carousel products-slider">
       <div class="product-item">
         <div class="product-item-wrapper">
@@ -379,7 +379,7 @@
     </div>
   </div>
 
-  <div id="designers" class="tabcontent">
+  <div class="tabcontent">
     <div class="owl-carousel products-slider">
       <div class="product-item">
         <div class="product-item-wrapper">
@@ -443,7 +443,7 @@
     </div>
   </div>
 
-  <div id="featured" class="tabcontent">
+  <div class="tabcontent">
     <div class="owl-carousel products-slider">
       <div class="product-item">
         <div class="product-item-wrapper">
@@ -505,10 +505,9 @@
     <div class="align-center">
       <a href="#" class="load-more hidden-md-up">load more</a>
     </div>
-
   </div>
 
-  <div id="latest" class="tabcontent">
+  <div class="tabcontent">
     <div class="owl-carousel products-slider">
       <div class="product-item">
         <div class="product-item-wrapper">
