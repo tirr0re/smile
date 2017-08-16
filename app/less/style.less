@@ -595,6 +595,35 @@ nav {
   }
 }
 
+.select-tab {
+  position: relative;
+  width: 100%;
+  background-color: darken(@color-coral, 7%);
+  padding: 30px 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  appearance:none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.select-wrapper:after {
+  content:'';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
 .tabcontent {
   padding: 20px 0;
   background-color: @color-coral;
